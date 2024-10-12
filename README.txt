@@ -50,5 +50,5 @@ Restarting the Game:
 Author:
 -------
 This game was built using vanilla JavaScript, HTML, and CSS. Enjoy playing!
-Made By Vortexgaming (or Alex Altus)
+Made By AlexTheCodingAlien (or Alex Altus)
 
