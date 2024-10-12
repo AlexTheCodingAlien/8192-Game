@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf8ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+}
+
+.grid-cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee4da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.score-container {
+    margin-bottom: 10px;
+}
+
+#restart-button,
+#restart-from-lose {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8fbc8f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover,
+#restart-from-lose:hover {
+    background-color: #6b8e23;
+}
+
+.lose-screen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #8fbc8f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+[data-value="2"] { background-color: #eee4da; color: #776e65; }
+[data-value="4"] { background-color: #ede0c8; color: #776e65; }
+[data-value="8"] { background-color: #f2b179; color: #f9f6f2; }
+[data-value="16"] { background-color: #f59563; color: #f9f6f2; }
+[data-value="32"] { background-color: #f67c5f; color: #f9f6f2; }
+[data-value="64"] { background-color: #f67c5f; color: #f9f6f2; }
+[data-value="128"] { background-color: #f9c84d; color: #f9f6f2; }
+[data-value="256"] { background-color: #f9c84d; color: #f9f6f2; }
+[data-value="512"] { background-color: #edcf72; color: #f9f6f2; }
+[data-value="1024"] { background-color: #edcc61; color: #f9f6f2; }
+[data-value="2048"] { background-color: #edc53f; color: #f9f6f2; }
+
+@keyframes slide {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
